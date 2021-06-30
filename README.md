@@ -1,5 +1,5 @@
 <h1>SmartSolver</h1>
-The SmartSolver class to solve linear programming problems. The underlying library of SmartSolver is an R based linear programming solver called 'lpSolve'. The R program is called by the ExtensoSolver to solve a linear program.
+The SmartSolver class to solve linear programming problems. The underlying library of SmartSolver is an R based linear programming solver called 'lpSolve'. The R program is called by the SmartSolver to solve a linear program.
 
 The maximization and minimization problems are pretty straight forward. However, the user has additional facility to use tackle with infeasible as well as unbounded solution.
 
@@ -18,7 +18,7 @@ The unbounded solutions exists in a linear programming problem probably because 
 
 The unbounded solution cannot just be handled by introducing additional variable, because there is no gurantee that there will be a bounded region after introducing such variables. Instead what we can do is, add another constraint hoping the added constraint will introduce a boundary. This, is the basic idea behind treating unbounded solution in linear programming problem.
 
-<h1>Using ExtensoSolver</h1>
+<h1>Using SmartSolver</h1>
 <h2>Setting up environment</h2>
 
 <li> R (preferably 3.5.2) should be installed in the system.
